@@ -11,6 +11,7 @@ BackbonePortfolio.Routers = BackbonePortfolio.Routers || {};
           'blog'      : 'blog',
           'blog_admin': 'admin',
           'portfolio' : 'work',
+          'port_admin': 'port'
         },
 
         about: function () {
@@ -31,6 +32,11 @@ BackbonePortfolio.Routers = BackbonePortfolio.Routers || {};
         work: function () {
            console.log('work');
            new BackbonePortfolio.Views.Portfolio();
+        },
+
+        port: function () {
+           console.log('port-admin');
+           new BackbonePortfolio.Views.Portadmin();
         }
     });
 })();
