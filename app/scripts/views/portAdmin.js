@@ -21,14 +21,14 @@ BackbonePortfolio.Views = BackbonePortfolio.Views || {};
             var img   = $('#img').val();
             var desc  = $('#desc').val();
 
-            var post  = new BackbonePortfolio.Models.Project({
+            var project  = new BackbonePortfolio.Models.Project({
                 title: title,
-                img: image,
-                desc: description
+                image: img,
+                description: desc
             });
 
             BackbonePortfolio.Projects.add(project);
-            $('input, textarea').val('');
+            $('input').val('');
         },
 
         initialize: function () {
