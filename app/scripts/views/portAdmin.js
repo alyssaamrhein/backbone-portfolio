@@ -9,7 +9,7 @@ BackbonePortfolio.Views = BackbonePortfolio.Views || {};
 
         template: JST['app/scripts/templates/portAdmin.ejs'],
 
-        el: $('#appContainerDos'),
+        el: $('#appContainer'),
 
         events: {
             'submit #newPort': 'onSubmit'

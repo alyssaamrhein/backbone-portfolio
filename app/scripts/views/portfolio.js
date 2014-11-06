@@ -9,7 +9,7 @@ BackbonePortfolio.Views = BackbonePortfolio.Views || {};
 
         template: JST['app/scripts/templates/portfolio.ejs'],
 
-        el: $('#appContainerDos'),
+        el: $('#appContainer'),
 
         events: {},
 
