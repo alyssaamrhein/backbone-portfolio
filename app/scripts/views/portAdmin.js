@@ -9,22 +9,23 @@ BackbonePortfolio.Views = BackbonePortfolio.Views || {};
 
         template: JST['app/scripts/templates/portAdmin.ejs'],
 
-        el: $('#appContainer'),
+        el: $('#appContainerDos'),
 
         events: {
-          'submit #newPort': 'onSubmit'
+            'submit #newPort': 'onSubmit'
         },
 
         onSubmit: function (event) {
             event.preventDefault();
-            var title = $('#title').val();
-            var img   = $('#img').val();
-            var desc  = $('#desc').val();
+            console.log('anything');
+            var title = $('#portTitle').val();
+            var img   = $('#portImg').val();
+            var desc  = $('#portDesc').val();
 
             var project  = new BackbonePortfolio.Models.Project({
-                title: title,
-                image: img,
-                description: desc
+                portTitle: title,
+                portImg: img,
+                portDesc: desc
             });
 
             BackbonePortfolio.Projects.add(project);
